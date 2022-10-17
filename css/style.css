@@ -38,6 +38,13 @@ header button {
     font-family: 'Plus Jakarta Sans';
     font-weight: 700;
     font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1;
+}
+header button:hover {
+    background-color: #666CA3;
+    
 }
 section {
     width: 90%;
@@ -78,14 +85,14 @@ section {
     font-size: 18px;
     font-weight: 700;
     font-family: 'Plus Jakarta Sans';
+    cursor: pointer;
+    transition: all 0.3s;
 }
-
+.text-info button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
 .photo-info {
     width: 45%;
-    
-    /* border: 2px solid blue; */
-    
-    /* position: absolute; */
     right: 0;
     top: 0;
 }
@@ -169,6 +176,10 @@ main {
     background: none;
     border: none;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.box button:hover {
+    color: #FFA7C3;
 }
 footer {
     width: 100%;
@@ -193,5 +204,10 @@ footer button {
     color: #fff;
     font-weight: 700;
     font-size: 18px;
+    cursor: pointer;
     font-family: 'Plus Jakarta Sans';
+    transition: all 0.3s;
+}
+footer button:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
