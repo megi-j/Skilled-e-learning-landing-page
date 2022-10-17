@@ -60,6 +60,7 @@ section {
     font-size: 56px;
     line-height: 71px;
     font-family: 'Plus Jakarta Sans';
+    color: #13183F;
 }
 .text-info p{
     font-weight: 500;
@@ -200,7 +201,7 @@ footer button {
 footer button:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
-.tablet-img {
+.tablet-img, .mobile-img {
     display: none;
 }
 @media (max-width: 768px){
@@ -251,5 +252,54 @@ footer button:hover{
     footer button {
         padding: 9px 24px;
         font-size: 16px;
+    }
+}
+
+@media (max-width: 375px){
+    .tablet-img {
+        display: none;
+    }
+    .mobile-img {
+        display: block;
+    }
+    section {
+       flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .text-info {
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+       
+    }
+    .text-info h1, .text-info p {
+        margin-bottom: 20px;
+    }
+    .photo-info {
+        width: 100%;
+        
+    }
+    .photo-info img {
+        height: auto;
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+    .box:first-child {
+        padding-left: 28px;
+        padding-right: 28px;
+        width: 343px;
+        height: 120px;
+       
+    }
+    .box:first-child p {
+        font-size: 24px;
+        line-height: 32px;
+        
+    }
+    main {
+        padding: 50px 0;
     }
 }
