@@ -5,26 +5,20 @@
 .container {
     max-width: 1440px;
     width: 100%;
-    /* height: 100vh; */
     margin: 0 auto;
-    /* border: 2px solid black; */
     overflow: hidden;
 }
 header {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 24px;
-    /* border: 2px solid red; */
-    /* position: relative; */
-    /* z-index: 0; */
 }
 .logo {
     width: 111px;
-    height: 27px;
-
+    height: 45px;
 }
 .logo img {
     width: 100%;
@@ -47,16 +41,14 @@ header button:hover {
     
 }
 section {
-    width: 90%;
+    width: 95%;
     margin: 50px auto;
-    /* border: 2px dotted greenyellow; */
     display: flex;
     justify-content: space-between;
-    /* overflow: hidden; */
+    
 }
 .text-info {
     width: 45%;
-    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -99,20 +91,17 @@ section {
 .photo-info img {
     width: 160%;
     height: 130%;
-    /* border: 3px solid red; */
     margin-top: -200px;
     margin-left: 50px; 
-    /* z-index: 10; */
 }
 main {
     width: 100%;
     margin: 0 auto;
-    
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
     padding: 110px 0;
 }
 .boxes{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -210,4 +199,57 @@ footer button {
 }
 footer button:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+.tablet-img {
+    display: none;
+}
+@media (max-width: 768px){
+    .logo {
+        width: 89px;
+        height: 35px;
+    
+    }
+    header button {
+        font-size: 16px;
+        padding: 9px 24px;
+    }
+    .text-info h1{
+        font-size: 40px;
+        line-height: 50px;
+        
+    }
+    .text-info p{
+        font-size: 16px;
+        line-height: 26px;
+        color: #83869A;
+    }
+    .desktop-img {
+        display: none;
+    }
+    .tablet-img {
+        display: block;
+    }
+    .photo-info img {
+        height: 180%;
+    
+    }
+    .text-info button {
+        padding: 15px 37px;
+        font-size: 16px;
+    }
+    .box {
+        width: 339px;
+        height: 259px;
+        border-radius: 10px;
+    }
+    .box h3{
+        font-size: 20px;
+    }
+    .box p{
+        font-size: 16px;
+    }
+    footer button {
+        padding: 9px 24px;
+        font-size: 16px;
+    }
 }
