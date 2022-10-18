@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Plus+Jakarta+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Plus+Jakarta+Sans:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Plus+Jakarta+Sans:wght@500&display=swap');
-
+:root {
+   --font: 18px;
+}
+body {
+    font-family: 'Plus Jakarta Sans';
+}
 .container {
     max-width: 1440px;
     width: 100%;
@@ -32,23 +37,20 @@ header button {
     border: none;
     color: #fff;
     padding: 14px 31px;
-    font-family: 'Plus Jakarta Sans';
     font-weight: 700;
-    font-size: 18px;
+    font-size: var(--font);
     cursor: pointer;
     transition: all 0.3s;
     z-index: 1;
 }
 header button:hover {
-    background-color: #666CA3;
-    
+    background-color: #666CA3;   
 }
 section {
     width: 95%;
     margin: 50px auto;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 .text-info {
     width: 45%;
@@ -56,20 +58,17 @@ section {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
 }
 .text-info h1{
     font-weight: 800;
     font-size: 56px;
-    font-family: 'Plus Jakarta Sans';
     color: #13183F;
 }
 .text-info p{
     font-weight: 500;
-    font-size: 18px;
+    font-size: var(--font);
     line-height: 28px;
     color: #83869A;
-    font-family: 'Plus Jakarta Sans';
     margin-bottom: 30px;
 }
 .text-info button {
@@ -78,9 +77,8 @@ section {
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     color: #fff;
     border: none;
-    font-size: 18px;
+    font-size: var(--font);
     font-weight: 700;
-    font-family: 'Plus Jakarta Sans';
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -144,7 +142,6 @@ main {
     font-size: 32px;
     line-height: 40px;
     color: #fff;
-    font-family: 'Plus Jakarta Sans';
 }
 .box img {
     width: 56px;
@@ -152,22 +149,19 @@ main {
     margin-top: -28px;
 }
 .box h3{
-    font-family: 'Plus Jakarta Sans';
     font-weight: 800;
     font-size: 24px;
     color: #13183F;
 }
 .box p{
-    font-family: 'Plus Jakarta Sans';
     font-weight: 500;
-    font-size: 18px;
+    font-size: var(--font);
     line-height: 28px;
     color:  #83869A;
 }
 .box button{
-    font-family: 'Plus Jakarta Sans';
     font-weight: 700;
-    font-size: 18px;
+    font-size: var(--font);
     color: #F74780;
     background: none;
     border: none;
@@ -199,9 +193,8 @@ footer button {
     background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
     color: #fff;
     font-weight: 700;
-    font-size: 18px;
+    font-size: var(--font);
     cursor: pointer;
-    font-family: 'Plus Jakarta Sans';
     transition: all 0.3s;
 }
 footer button:hover{
@@ -298,13 +291,11 @@ footer button:hover{
         padding-left: 28px;
         padding-right: 28px;
         width: 343px;
-        height: 120px;
-       
+        height: 120px; 
     }
     .box:first-child p {
         font-size: 24px;
-        line-height: 32px;
-        
+        line-height: 32px;   
     }
     main {
         padding: 50px 0;
