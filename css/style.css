@@ -55,13 +55,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
-    /* align-content: center; */
+    justify-content: center;
+
 }
 .text-info h1{
     font-weight: 800;
     font-size: 56px;
-    line-height: 71px;
     font-family: 'Plus Jakarta Sans';
     color: #13183F;
 }
@@ -71,6 +70,7 @@ section {
     line-height: 28px;
     color: #83869A;
     font-family: 'Plus Jakarta Sans';
+    margin-bottom: 30px;
 }
 .text-info button {
     padding: 16px 31px;
@@ -86,6 +86,9 @@ section {
 }
 .text-info button:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+.title {
+    margin-bottom: 30px;
 }
 .photo-info {
     width: 45%;
@@ -126,7 +129,7 @@ main {
     padding-bottom: 40px;
     background-color: #fff;
     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
-    /* align-content: space-between; */
+    
 }
 .box:first-child {
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
@@ -259,10 +262,7 @@ footer button:hover{
 }
 
 @media (max-width: 375px){
-    /* header {
-        height: 80px;
-        padding: 0;
-    } */
+    
     .tablet-img {
         display: none;
     }
